@@ -1,5 +1,5 @@
-// Count upwards in binary
-// Elizabeth Posusta, Oct 2026
+// C++ code
+//
 const int LED_PIN0 = 3;
 const int LED_PIN4 = 7;
 int c = 0b00000;
@@ -7,7 +7,7 @@ int c_swap = 0b00000;
 
 void setup()
 {
-  Serial.begin(10);
+  Serial.begin(5);
   for(int pin = LED_PIN0; pin <= LED_PIN4; pin++)
   {
     pinMode(pin, OUTPUT);
@@ -35,7 +35,7 @@ void loop()
   memcpy(&c, &c_swap, sizeof(c_swap));
   c++;
   
-  if(c >= 0b11111)
+  if(c > 0b11111)
   {
    c = 0b00000;
    c_swap = 0b00000;
