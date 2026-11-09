@@ -21,53 +21,49 @@
 > Record a new row whenever any LED changes. Use ON/OFF and durations in milliseconds (1,000 ms = 1 second). Add or remove rows as needed. The last row 
 > returns to the first automatically.
 
-| Step | State/message name | LED Color | LED Color | LED Color | Duration (ms) | Meaning to the user |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | TODO | TODO | TODO | TODO | TODO | TODO |
-| 2 | TODO | TODO | TODO | TODO | TODO | TODO |
-| 3 | TODO | TODO | TODO | TODO | TODO | TODO |
+***N.B.*** The binary representation field describes the state of colored L.E.D.s*. All state changes occur in 100ms time.
+> *a 1 in a given bit means on, 0 means off. The leftmost bit is the white L.E.D., the next bit is the blue L.E.D., followed in the same fashion by the green, yellow, and red L.E.D.s.
 
-00000
-10000
-01000
-11000
-00100
-10100
-01100
-11100
-00010
-10010
-01010
-11010
-00110
-10110
-01110
-11110
-00001
-10001
-01001
-11001
-00101
-10101
-01101
-11101
-00011
-10011
-01011
-11011
-00111
-10111
-01111
-11111
+# | Binary representation | State name |
+--- | --- | --- |
+1 | 00000 | ZERO |
+2 | 10000 | ONE |
+3 | 01000 | TWO |
+4 | 11000 | THREE |
+5 | 00100 | FOUR |
+6 | 10100 | FIVE |
+7 | 01100 | SIX |
+8 | 11100 | SEVEN |
+9 | 00010 | EIGHT |
+10 | 10010 | NINE |
+11 | 01010 | TEN |
+12 | 11010 | ELEVEN |
+13 | 00110 | TWELVE |
+14 | 10110 | THIRTEEN |
+15 | 01110 | FOURTEEN |
+16 | 11110 | FIFTEEN |
+17 | 00001 | SIXTEEN |
+18 | 10001 | SEVENTEEN |
+19 | 01001 | EIGHTEEN |
+20 | 11001 | NINETEEN |
+21 | 00101 | TWENTY |
+22 | 10101 | TWENTY-ONE |
+23 | 01101 | TWENTY-TWO |
+24 | 11101 | TWENTY-THREE |
+25 | 00011 | TWENTY-FOUR |
+26 | 10011 | TWENTY-FIVE |
+27 | 01011 | TWENTY-SIX |
+28 | 11011 | TWENTY-SEVEN |
+29 | 00111 | TWENTY-EIGHT |
+30 | 10111 | TWENTY-NINE |
+31 | 01111 | THIRTY |
+32 | 11111 | THIRTY-ONE |
 
-**Sequence:** TODO → TODO → TODO → repeat  
+**Sequence:** 1 → 2 → 3 → ... → 32 → repeat  
 
 ## 3. Circuit design
 
-> Design your layout in TinkerCAD.
-> Export an image and upload it to this repo. Link it below
-
-![Circuit diagram screenshot](circuit.png)
+![Circuit diagram screenshot](schematic.png)
 
 ### Ohm's law calculations
 
@@ -76,9 +72,11 @@
 
 | LED | Arduino output voltage (V) | LED voltage drop (V) | Calculated resistor voltage (V) | Target current (A) | Calculated resistance (Ω) | Chosen resistance (Ω) | Estimated actual current (A) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Color LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
-| Color LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
-| Color LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
+| White LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
+| Blue LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
+| Green LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
+| Yellow LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
+| Red LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
 
 ## 4. Testing and revision
 > Test your system with two people outside our class. Show each person the complete sequence before explaining its intended meaning. Ask:
