@@ -21,43 +21,43 @@
 > Record a new row whenever any LED changes. Use ON/OFF and durations in milliseconds (1,000 ms = 1 second). Add or remove rows as needed. The last row 
 > returns to the first automatically.
 
-***N.B.*** The binary representation field describes the state of colored L.E.D.s*. All state changes occur in 100ms time.
-> *a 1 in a given bit means on, 0 means off. The leftmost bit is the white L.E.D., the next bit is the blue L.E.D., followed in the same fashion by the green, yellow, and red L.E.D.s.
+***N.B.*** The binary representation field describes the state of colored LEDs*. All state changes occur in 100ms time.
+> *a 1 in a given bit means on, 0 means off. The leftmost bit is the white LED, the next bit is the blue LED, followed in the same fashion by the green, yellow, and red LEDs.
 
-# | Binary representation | State name |
---- | --- | --- |
-1 | 00000 | ZERO |
-2 | 10000 | ONE |
-3 | 01000 | TWO |
-4 | 11000 | THREE |
-5 | 00100 | FOUR |
-6 | 10100 | FIVE |
-7 | 01100 | SIX |
-8 | 11100 | SEVEN |
-9 | 00010 | EIGHT |
-10 | 10010 | NINE |
-11 | 01010 | TEN |
-12 | 11010 | ELEVEN |
-13 | 00110 | TWELVE |
-14 | 10110 | THIRTEEN |
-15 | 01110 | FOURTEEN |
-16 | 11110 | FIFTEEN |
-17 | 00001 | SIXTEEN |
-18 | 10001 | SEVENTEEN |
-19 | 01001 | EIGHTEEN |
-20 | 11001 | NINETEEN |
-21 | 00101 | TWENTY |
-22 | 10101 | TWENTY-ONE |
-23 | 01101 | TWENTY-TWO |
-24 | 11101 | TWENTY-THREE |
-25 | 00011 | TWENTY-FOUR |
-26 | 10011 | TWENTY-FIVE |
-27 | 01011 | TWENTY-SIX |
-28 | 11011 | TWENTY-SEVEN |
-29 | 00111 | TWENTY-EIGHT |
-30 | 10111 | TWENTY-NINE |
-31 | 01111 | THIRTY |
-32 | 11111 | THIRTY-ONE |
+| # | Binary representation | State name |
+| --- | --- | --- |
+| 1 | 00000 | ZERO |
+| 2 | 10000 | ONE |
+| 3 | 01000 | TWO |
+| 4 | 11000 | THREE |
+| 5 | 00100 | FOUR |
+| 6 | 10100 | FIVE |
+| 7 | 01100 | SIX |
+| 8 | 11100 | SEVEN |
+| 9 | 00010 | EIGHT |
+| 10 | 10010 | NINE |
+| 11 | 01010 | TEN |
+| 12 | 11010 | ELEVEN |
+| 13 | 00110 | TWELVE |
+| 14 | 10110 | THIRTEEN |
+| 15 | 01110 | FOURTEEN |
+| 16 | 11110 | FIFTEEN |
+| 17 | 00001 | SIXTEEN |
+| 18 | 10001 | SEVENTEEN |
+| 19 | 01001 | EIGHTEEN |
+| 20 | 11001 | NINETEEN |
+| 21 | 00101 | TWENTY |
+| 22 | 10101 | TWENTY-ONE |
+| 23 | 01101 | TWENTY-TWO |
+| 24 | 11101 | TWENTY-THREE |
+| 25 | 00011 | TWENTY-FOUR |
+| 26 | 10011 | TWENTY-FIVE |
+| 27 | 01011 | TWENTY-SIX |
+| 28 | 11011 | TWENTY-SEVEN |
+| 29 | 00111 | TWENTY-EIGHT |
+| 30 | 10111 | TWENTY-NINE |
+| 31 | 01111 | THIRTY |
+| 32 | 11111 | THIRTY-ONE |
 
 **Sequence:** 1 → 2 → 3 → ... → 32 → repeat  
 
