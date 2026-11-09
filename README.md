@@ -65,18 +65,18 @@
 
 ## 4. Testing and revision
 
-**Person 1:** TODO
+**Person 1:** The Arduino powers each LED at double the time interval of the LED to its left, like a clock counting upwards in multiples of two.
 
-**Person 2:** TODO
+**Person 2:** "It changes the color of the lights when you're driving [sic\]"
 
-**Did their interpretations match your intended meaning? Explain:** TODO
+**Did their interpretations match your intended meaning? Explain:** I do not know exactly what Person 2 meant by their comment, but person 2 interpreted a function analogous to the intended effect (binary counter). Neither provided exact feedback, but the provided label was noted by Person 1 as being a key aspect in their reasoning.
 
 **Revisions made to the system based on feedback**
 > Describe at least one revisions you made based on the feedback you received and TEST it again.
 
-**Revision and reason**: TODO
+**Revision and reason**: The delay between state changes was doubled, from 100ms to 200ms.
 
-**Result after testing the revision:** TODO
+**Result after testing the revision:** The state changes of the LEDs are considerably easier to follow.
 
 ## 5. Video Demonstration
 > Replace the placeholder below with a link to your video. Demonstrate the complete repeating sequence and explain what each signal communicates. Make sure 
