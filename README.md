@@ -1,11 +1,5 @@
 # Signals and Systems
 
-> ** Remove the instructions in block quotes before you submit **
-
-> Design, build, program, and test a signaling system that communicates useful information without a screen or speaker. The red, yellow, and green LEDs 
-> automatically cycle through your planned states; no push button is needed. Complete this README as you work. Keep your planning, testing evidence, and 
-> link to your video demo here.
-
 ## 1. System purpose
 
 - **Problem and real-world context:** TODO
@@ -15,14 +9,8 @@
 
 ## 2. State table and pattern plan
 
-> Use the launch activity's approach: interpret a pattern, identify its states, and explain its meaning. Plan at least three meaningful message states. A 
-> message may use several rows, such as a blinking pattern.
-
-> Record a new row whenever any LED changes. Use ON/OFF and durations in milliseconds (1,000 ms = 1 second). Add or remove rows as needed. The last row 
-> returns to the first automatically.
-
 ***N.B.*** The binary representation field describes the state of colored LEDs*. All state changes occur in 100ms time.
-> *a 1 in a given bit means on, 0 means off. The leftmost bit is the white LED, the next bit is the blue LED, followed in the same fashion by the green, yellow, and red LEDs.
+*a 1 in a given bit means on, 0 means off. The leftmost bit is the white LED, the next bit is the blue LED, followed in the same fashion by the green, yellow, and red LEDs.
 
 | # | Binary representation | State name |
 | --- | --- | --- |
@@ -67,22 +55,15 @@
 
 ### Ohm's law calculations
 
-> Use `R = (V_output - V_LED) / I` to estimate the resistance for each LED. Use volts, amperes, and ohms; convert milliamperes to amperes. 
-> . Choose a suitable available resistor and check the resulting current using `I = (V_output - V_LED) / R`.
-
-| LED | Arduino output voltage (V) | LED voltage drop (V) | Calculated resistor voltage (V) | Target current (A) | Calculated resistance (Ω) | Chosen resistance (Ω) | Estimated actual current (A) |
+| LED | Arduino output voltage (V) | LED voltage drop (V) | Calculated resistor voltage (V) | Target current (mA) | Calculated resistance (Ω) | Chosen resistance (Ω) | Estimated actual current (mA) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| White LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
-| Blue LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
-| Green LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
-| Yellow LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
-| Red LED | 5.0 | TODO | TODO | TODO | TODO | TODO | TODO |
+| White LED | 5.0 | 3.0 | 2.0 | 30 | 67 | 220 | 9 |
+| Blue LED | 5.0 | 3.0 | 2.0 | 20 | 100 | 220 | 9 |
+| Green LED | 5.0 | 3.0 | 2.0 | 30 | 67 | 220 | 9 |
+| Yellow LED | 5.0 | 2.0 | 3.0 | 30 | 100 | 220 | 13 |
+| Red LED | 5.0 | 2.0 | 3.0 | 20 | 150 | 220 | 13 |
 
 ## 4. Testing and revision
-> Test your system with two people outside our class. Show each person the complete sequence before explaining its intended meaning. Ask:
-> What do you think this system is communicating? Describe what each light pattern means to you.
-> Were any patterns confusing or difficult to tell apart? Explain which ones and why.
-> What would make the signals easier to understand? Consider the colors, combinations, blinking, or timing.
 
 **Person 1:** TODO
 
